@@ -1,0 +1,860 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ageless Multi-Collagen</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- importing custom stylesheet and bootstrap CSS and javaScript with Popper and Font Awesome stylesheet  -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d6ddc74f1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- side fixed tab for reviews -->
+    <div class="side-tab d-none d-sm-block">
+        <button class="text-white text-uppercase bg-color-primary p-3">
+            <i class="fa-solid fa-star"></i>
+            Reviews
+        </button>
+    </div>
+
+    <!-- header elements and styling -->
+    <header class="row bg-color-primary p-2">
+
+        <!-- left side icon, message & styling -->
+        <div class="col-md-6 d-none d-lg-block text-white float-start">
+            <!-- people icon and message -->
+            <i class="fa-solid fa-person"></i>
+            <h5 class="text-white text-uppercase fw-bold d-inline-block">Every order feeds a child</h5>
+        </div>
+        
+        <!-- right side menu & styling -->
+        <div class="col-md-6 text-white">
+            <div class="float-lg-end float-none">
+                <!-- account icon -->
+                <i class="fa-solid fa-person d-inline-block">
+                    <div class="dropdown d-inline-block">
+                        <!-- dropdown menu buttons -->
+                        <button type="button" class="btn dropdown-toggle fw-bold text-white text-uppercase" data-bs-toggle="dropdown"> My Account</button>
+                        <!-- dropdown menu items -->
+                        <ul class="dropdown-menu color-primary">
+                            <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                            <li><a class="dropdown-item" href="#">Manage Subscriptions</a></li>
+                            <li><a class="dropdown-item" href="#">Track My Order</a></li>
+                            <li><a class="dropdown-item" href="#">Forget Password</a></li>
+                            <li><a class="dropdown-item" href="#">Create Account</a></li>
+                            <li><a class="dropdown-item" href="#">Customer Support</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </i>
+                <!-- cart icon and text -->
+                <i class="fa-solid fa-cart-shopping"> MY CART (0)</i>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar elements and styling -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- navbar logo -->
+        <img src="assets/logo.avif" class="logo img-thumbnail mx-5 my-0 float-start no-gutter" alt="Logo">
+
+        <!-- navbar contracted button -->
+        <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- navbar dropdown menu and other nav items -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <!-- dropdown -->
+                <li class="my-1 mx-3 nav-item active bg-color-primary p-1 rounded-3">
+                    <div class="dropdown">
+
+                        <!-- dropdown menu button -->
+                        <button type="button" class="btn dropdown-toggle text-white pt-2 pb-2 ps-3 pe-3"
+                            data-bs-toggle="dropdown">Shop</button>
+
+                        <!-- dropdown menu items -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                            <li><a class="dropdown-item" href="#">Manage Subscriptions</a></li>
+                            <li><a class="dropdown-item" href="#">Track My Order</a></li>
+                            <li><a class="dropdown-item" href="#">Forget Password</a></li>
+                            <li><a class="dropdown-item" href="#">Create Account</a></li>
+                            <li><a class="dropdown-item" href="#">Customer Support</a></li>
+                            <li><a class="dropdown-item" href="#">LogOut</a></li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <!-- left side other nav items -->
+                <li class="my-1 mx-3 nav-item fw-bold">
+                    <a class="nav-link" href="#">Quality</a>
+                </li>
+                <li class="my-1 mx-3 nav-item fw-bold">
+                    <a class="nav-link" href="#">Mission</a>
+                </li>
+                <li class="my-1 mx-3 nav-item fw-bold">
+                    <a class="nav-link" href="#">#BioTrust</a>
+                </li>
+            </ul>
+
+        <!-- customer support button and search bar -->
+        </div class="float-end">
+            <form class="d-none d-lg-block my-2 my-lg-0 text-end me-5">
+
+                <!-- customer support button -->
+                <button type="button" class="pd-r-0 btn text-success text-uppercase fw-bold text-end">Customer Support</button>
+            
+                <!-- search bar -->
+                <div class="d-flex position-relative">
+                    <input class="input-lg form-control form-control-lg mr-sm-2" type="search" placeholder="Search for products" aria-label="Search">
+                    <i class="search position-absolute d-inline fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- divider -->
+    <hr>
+
+    <!-- breadcrumb pages -->
+    <div class="m-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">HOME</a></li>
+                <li class="breadcrumb-item active"><a href="#">COLLAGEN PROTEIN</a></li>
+            </ol>
+        </nav>
+    </div>
+    
+
+    <!-- main page row -->
+    <div class="row p-2">
+
+        <!-- left column -->
+        <div class="col-md-6">
+            
+            <!-- main title left column -->
+            <h3 class="text-uppercase color-primary text-center mb-3 fw-bold">AGELESS MULTI-COLLAGEN® PROTEIN POWDER (4 DELICIOUS FLAVORS)</h3>
+
+            <!-- review star icons and text -->
+            <div class="text-center color-secondary">
+                <i class="fa-solid fa-star color-secondary"></i>
+                <i class="fa-solid fa-star color-secondary"></i>
+                <i class="fa-solid fa-star color-secondary"></i>
+                <i class="fa-solid fa-star color-secondary"></i>
+                <i class="fa-solid fa-star color-secondary"></i>
+                <span class="color-primary"> 2874 reviews</span>
+            </div>
+            
+            <!-- product image -->
+            <div class="d-flex align-items-center justify-content-center mt-3">
+                <img src="assets/product_image.jpg" class="product-image" alt="Product Image">
+            </div>
+
+            <!-- product banner -->
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="assets/product-banner.avif" class="i product-banner mt-2 w-100" alt="Product Image">
+            </div>
+           
+        </div>
+
+        <!-- right column -->
+        <div class="col-md-6">
+
+            <!-- main title right side -->
+            <h4 class="text-uppercase color-primary text-center mb-2 fw-bold">Choose your package</h4>
+            <p class="text-center mb-2 fw-bold">Select your money saving option below:</p>
+
+            <!-- dual buttons for purchase -->
+            <div class="row p-2">
+
+                <div class="col-6">
+                    <div class=" bg-color-primary text-center rounded-2">
+                        <button type="button" class="btn text-white fw-bold py-3 px-1">One Time Purchase</button>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="bg-color-primary text-center rounded-2">
+                        <button type="button" class="btn position-relative w-100 text-white fw-bold py-3 px-1">Subscribe And Save 36%</button>
+                        <span class="position-absolute badge end-0 rounded-pill bg-success" data-bs-toggle="tooltip">?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- alternate triple cards -->
+            <div class="d-lg-none d-md-block m-4">
+
+                <!-- card#1 with image, text and button -->
+                <div class="row alt-cards p-2 mt-2 border-primary">
+                    <div class="col-2">
+                        <img src="assets/pack1.jpg" alt="pack">
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-center color-primary fw-bold">1 Bag</h4>
+                        <h6 class="text-center fw-bold">$ 49</h6>
+                    </div>
+                    <div class="col-6">
+                        <div class=" bg-color-secondary text-center rounded-2">
+                            <button type="button" class="btn text-white text-uppercase fw-bold">Choose <br> Flavor</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- card#2 with image, text and button -->
+                <div class="row alt-cards alt-cards-mid p-2 mt-2 border-primary">
+                    <div class="col-2">
+                        <img src="assets/pack2.jpg" alt="pack">
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-center color-primary fw-bold">1 Bag</h4>
+                        <h6 class="text-center fw-bold color-secondary">$ 35 per bag</h6>
+                        <h6 class="text-center fw-bold color-tertiary">(Save 28%)</h6>
+                    </div>
+                    <div class="col-6">
+                        <div class=" bg-color-secondary text-center rounded-2">
+                            <button type="button" class="btn text-white text-uppercase fw-bold">Choose <br> Flavor</button>
+                        </div>
+                        <p class="mt-1 fw-bold font-italic text-center color-primary">Most Popular !</p>
+                    </div>
+                </div>
+                
+                <!-- card#3 with image, text and button -->
+                <div class="row alt-cards alt-cards p-2 mt-2 border-primary">
+                    <div class="col-2">
+                        <img src="assets/pack3.jpg" alt="pack">
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-center color-primary fw-bold">1 Bag</h4>
+                        <h6 class="text-center fw-bold color-secondary">31 per bag</h6>
+                        <h6 class="text-center fw-bold color-tertiary">(Save 36%)</h6>
+                    </div>
+                    <div class="col-6">
+                        <div class=" bg-color-secondary text-center rounded-2">
+                            <button type="button" class="btn text-white text-uppercase fw-bold">Choose <br> Flavor</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- normal triple card layout -->
+            <div class="container triple-cards mt-5 d-none d-lg-block">
+                <div class="row justify-content-center">
+                
+                    <!-- card#1 with text and button -->
+                    <div class="col-lg-4 no-gutter card-layout">
+                        <div class="card" style="border: 2px solid #0d4f9a; z-index: 1; border-radius: 5% 0% 0% 5%;">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold text-center color-primary">1 Bag</h1>
+                                <h2 class="card-title fw-bold text-center mb-5">$ 49</h2>
+                                <div class=" bg-color-secondary text-center rounded-2">
+                                    <button type="button" class="btn text-white text-uppercase fw-bold">Choose Flavor</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- card#2 with text and button -->
+                    <div class="col-lg-4 no-gutter card-layout">
+                        <div class="card" style="border: 6px solid #0d4f9a; z-index: 2; border-radius: 0% 0% 5% 5%">
+                            <div class="card-body mid-card">
+                                <div class="text-white fw-bold text-uppercase text-center bg-color-primary">
+                                    Most Popular
+                                </div>
+                                <h1 class="card-title text-center fw-bold color-primary">3 Bags</h1>
+                                <h2 class="card-title text-center fw-bold color-secondary">$ 35</h2>
+                                <h2 class="card-title text-center fw-bold color-secondary">Per Bag</h2>
+                                <h3 class="card-title text-center fw-bold mb-1 color-tertiary">Save 28%</h3>
+                                <div class=" bg-color-secondary text-center rounded-2 m-2">
+                                    <button type="button" class="btn text-white text-uppercase fw-bold">Choose Flavor</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- card#3 with text and button -->
+                    <div class="col-lg-4 no-gutter card-layout">
+                        <div class="card" style="border: 2px solid #0d4f9a; z-index: 1; border-radius: 0% 5% 5% 0%">
+                            <div class="card-body">
+                                <h1 class="card-title text-center fw-bold color-primary">6 Bags</h1>
+                                <h2 class="card-title text-center fw-bold color-secondary">$ 31</h2>
+                                <h2 class="card-title text-center fw-bold color-secondary">Per Bag</h2>
+                                <h3 class="card-title text-center fw-bold mb-1 color-tertiary">Save 36%</h3>
+                                <div class=" bg-color-secondary text-center rounded-2">
+                                    <button type="button" class="btn text-white text-uppercase fw-bold">Choose Flavor</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- single image carousal -->
+            <div class="row">
+                <div class="col-12 align-items-center">
+                    <p class="text-center color-primary fw-bold mt-5 text-uppercase">PHOTOS FROM THE #biotrust COMMUNITY</p>
+                    <div id="carouselExampleControls" class="carousel slide mb-1" data-ride="carousel">
+            
+                        <!-- carousel images -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block" src="assets/slide-img01.jpeg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img02.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img03.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img04.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img05.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img06.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img07.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img08.jpg" alt="Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="assets/slide-img09.jpg" alt="Slide">
+                            </div>
+                        </div>
+            
+                        <!-- carousel controls -->
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+            
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- divider -->
+    <hr>
+
+    <!-- product sales pitch text and details text -->
+    <div class="m-5">
+
+        <!-- title -->
+        <h4 class="fw-bold">The No-Clump Collagen Protein Powder</h4>
+        <h6 class="fw-bold">Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:</h6>
+
+        <!-- list of details -->
+        <ul>
+            <li>Healthy Skin, Hair, and Nails</li>
+            <li>Gut, Joint, and Bone Health</li>
+            <li>Athletic Performance, Recovery, and an Active Lifestyle</li>
+        </ul>
+
+        <!-- title -->
+        <h6 class="fw-bold">Plus, Every Serving of Ageless Multi-Collagen is:</h6>
+
+        <!-- list of details -->
+        <ul>
+            <li>Loaded with 10 Grams of Collagen Protein (per serving) including BioActive Collagen Peptides</li>
+            <li>A Complete Protein Source Featuring 140mg of Tryptophan</li>
+            <li>Tasteless and Odorless or Available in Delicious Flavors</li>
+            <li>Mixes Instantly WITHOUT Clumps (in hot or cool liquids)</li>
+        </ul>
+
+    </div>
+
+    <!-- four column container layout of product details -->
+    <div class="row no-gutter text-white text-uppercase text-center bg-color-primary fw-bold pb-5">
+
+        <!-- container#1 elements and styling -->
+        <div class="col-md-6 col-sm-12 col-lg-3 no-gutter">
+            <div class="container-fluid bg-color-primary-alt pt-2 ps-5 pe-5 pb-1 border border-white">
+                <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286" alt="img1" class="container-img">
+                <p>60-DAY MONEY BACK GUARANTEE</p>
+            </div>
+        </div>
+
+        <!-- container#2 elements and styling -->
+        <div class="col-md-6 col-sm-12 col-lg-3 no-gutter">
+            <div class="container-fluid bg-color-primary-alt pt-2 ps-5 pe-5 pb-1 border border-white">
+                <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Complete_-5-Collagen-Protein.png?33316" alt="img2" class="container-img">
+                <p>COMPLETE, 5-COLLAGEN PROTEIN</p>
+            </div>
+        </div>
+
+        <!-- container#3 elements and styling -->
+        <div class="col-md-6 col-sm-12 col-lg-3 no-gutter">
+            <div class="container-fluid bg-color-primary-alt pt-2 ps-5 pe-5 pb-1 border border-white">
+                <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png?347326" alt="img3" class="container-img">
+                <p>HORMONE & GLUTEN-FREE & NON-GMO</p>
+            </div>
+        </div>
+
+        <!-- container#4 elements and styling -->
+        <div class="col-md-6 col-sm-12 col-lg-3 no-gutter">
+            <div class="container-fluid bg-color-primary-alt pt-2 ps-5 pe-5 pb-1 border border-white">
+                <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png?34732" alt="img4" class="container-img">
+                <p>NEVER CLUMPS</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer customer review text and details -->
+    <div class="row bg-color-primary">
+
+        <!-- main text -->
+        <div class="col-md-5 border-end border-5 border-success pe-5 pb-5">
+            <h1 class="display-4 text-uppercase text-white text-lg-end text-center">Featured</h1>
+            <h1 class="display-4 text-uppercase text-white text-lg-end text-center">Customer Review</h1>
+            <h4 class="color-secondary text-lg-end text-center">Read More Reviews</h4>
+        </div>
+
+        <!-- review icons -->
+        <div class="col-md-7">
+            <div class="text-center color-secondary">
+                <i class="fa-solid fa-star fa-3x color-secondary"></i>
+                <i class="fa-solid fa-star fa-3x color-secondary"></i>
+                <i class="fa-solid fa-star fa-3x color-secondary"></i>
+                <i class="fa-solid fa-star fa-3x color-secondary"></i>
+                <i class="fa-solid fa-star fa-3x color-secondary"></i>
+            </div>
+
+            <!-- review text -->
+            <h5 class="text-white text-center mt-3">"<strong>I love it! No taste or smell. I put it in my coffee first thing. Cuts my hunger and gives me energy."</strong></h5>
+            <h5 class="text-white text-center mt-2 fst-italic"><strong>Jacqueline T.</strong></h5>
+            <h4 class="color-secondary text-center mt-2 text-uppercase"><strong>Verified Buyer</strong></h4>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- footer nav item tabs for product details text -->
+    <div class="container m-5">
+
+        <ul class="nav nav-tabs flex-column flex-md-row">
+
+            <li class="active nav-item fw-bold text-lg-start text-center">
+                <a class="active nav-link color-primary" data-bs-toggle="tab" href="#text1">Health Benefits</a>
+            </li>
+
+            <li class="nav-item fw-bold text-lg-start text-center">
+                <a class="nav-link color-primary" data-bs-toggle="tab" href="#text2">Nutrition & Ingredients</a>
+            </li>
+
+            <li class="nav-item fw-bold text-lg-start text-center">
+                <a class="nav-link color-primary" data-bs-toggle="tab" href="#text3">FAQs</a>
+            </li>
+           
+            <li class="nav-item fw-bold text-lg-start text-center">
+                <a class="nav-link color-primary" data-bs-toggle="tab" href="#text4">Reviews</a>
+            </li>
+
+        </ul>
+
+
+        <div class="tab-content">
+
+            <!-- large text section number #1 -->
+            <div id="text1" class="tab-pane active mt-4 mb-4 ms-2">
+            
+                <h4 class="fw-bold">What Is Collagen Protein?</h4>
+            
+                <p>By now, youve probably seen the ads and heard people talking about collagen protein—its everywhere. But whats all
+                    the
+                    buzz about? Is it time for you to jump on the bandwagon? And if youve already joined the masses, why should you
+                    make
+                    the switch to Ageless Multi-Collagen Protein Powder?</p>
+            
+                <p>In order to answer these questions, we first have to answer this one: What is <strong>collagen ?</strong></p>
+            
+                <p>Simply put, collagen is the most abundant and arguably the most important protein in the body. In fact, collagen
+                    constitutes a whopping 30% of the protein in your body. Aside from water, collagen is the most plentiful
+                    substance in
+                    your body—pretty crazy, right?</p>
+            
+                <p>For example, collagen makes up 70% of the protein in our skin, and its one of the primary structural proteins in
+                    joints, bones, cartilage, ligaments, tendons, hair, fingernails, the intestinal wall, and more. Collagen is the
+                    glue—literally, it comes from the Greek word for glue—that supports, connects, and holds everything together.
+                </p>
+            
+                <p>Not surprisingly, healthy levels of collagen are vital to support:</p>
+            
+                <ul>
+                    <li>Smooth, healthy, young-looking skin</li>
+                    <li>Strong, healthy fingernails and glossy hair</li>
+                    <li>Healthy, supple joints</li>
+                    <li>Bone health</li>
+                    <li>Healthy digestion and gut health</li>
+                    <li>Strong, healthy tendons and ligaments</li>
+                </ul>
+            
+                <p>Theres more—including healthy, flexible blood vessels and organ health—but the moral of the story is that
+                    collagen is a
+                    component of your entire body, and it has a tremendous impact on how you look and feel.</p>
+            
+                <h4 class="fw-bold">Why Do You Need a Collagen Powder?</h4>
+            
+                <p>When youre young, your body makes all the collagen it needs. Thats why your skin is firm and glowing, your joints
+                    are
+                    supple, and your digestive system works like a champ.</p>
+            
+                <p>So, what happens as you get older? Your body loses its ability to make collagen, and to make matters worse,
+                    collagen
+                    might reduce more rapidly thanks to things like smoking, stress, excess sun exposure, physical activity, and
+                    diet. For
+                    example, consuming sugar, refined carbs, and poor-quality fats (such as industrial produced vegetable oils),
+                    which are
+                    common in processed foods, can all contribute to collagen depletion.</p>
+            
+                <p class="fw-bold">In simple terms, we produce less collagen with age.</p>
+            
+                <p>For example, studies show that skin levels of collagen decrease by about 11 to 13% with each passing decade after
+                    the age
+                    of 20, and by the time folks hit their 80s, collagen levels may be, on average, only one-third of what they were
+                    in
+                    their 20s.</p>
+            
+                <img src="graph.jpg" alt="Graph" class="">
+            
+                <p>Over time, this reduction in collagen may contribute to…</p>
+            
+                <ul>
+                    <li>Skin sags and wrinkles</li>
+                    <li>Hair gets thinner, and nails lose their strength</li>
+                    <li>Joints become stiff and less flexible</li>
+                    <li>Recovery from activities like exercise slows</li>
+                    <li>Occasional gut-related complaints come out of nowhere</li>
+                </ul>
+            
+                <p>That may sound grim, but its not all bad news. In fact, theres GREAT news. <strong>You can ramp up your bodys
+                        collagen
+                        production by consuming more collagen protein in your diet.</strong></p>
+            
+                <p>Collagen protein is very different from other common protein sources—such as beef, poultry, fish, eggs, dairy,
+                    and
+                    plants—because it features a unique profile of amino acids, and it is especially rich in glycine, proline, and
+                    hydroxyproline, which is found ONLY in collagen protein. Together, these three amino acids account for 40 to 50%
+                    of the
+                    amino acids in collagen protein, which is 10 to 20 times higher than other common protein sources.</p>
+            
+                <p>Why is that important? These are the raw materials the body needs to support collagen production and support
+                    healthy
+                    levels of collagen. Even more, research shows that consuming a very specific type of collagen protein—known as
+                    collagen
+                    peptides—trigger the body to make more collagen and produce more hyaluronic acid, which is a lubricating fluid
+                    thats a
+                    key component of healthy, hydrated skin and healthy, supple joints.</p>
+            
+                <p class="fw-bold">So, where can you find collagen protein?</class="fw-bold">
+            
+                <p>Well, just like us, collagen is the primary structural protein in animals. Youll find it in their connective
+                    tissue,
+                    including skin, bones, and cartilage. Unfortunately, weve all but abandoned the traditional “nose to tail” way
+                    of
+                    eating.</p>
+            
+                <p>Most of us eat boneless, skinless muscle meat, which provides protein thats quite a bit different than collagen
+                    protein, which has a very specific combination of amino acids and functional properties. We rarely eat bone-in
+                    meat, let
+                    alone the skin, organ meats, and other connective tissue from land and sea creatures.</p>
+            
+                <p>And while bone broth can be a great source of collagen protein, making homemade bone broth takes time to make and
+                    clean
+                    up—a lot of time. The good news is that you can buy pre-made bone broth thats pretty darn tasty. However, that
+                    can
+                    become an expensive habit quite quickly, and lets face it, most people arent interested in sipping a cup of bone
+                    broth
+                    every single day, which youd need to do to continuously support healthy levels of collagen.</p>
+            
+                <h5 class="fw-bold">The Problem with Most Collagen Supplements on the Market</h5>
+            
+                <p>Thankfully, theres a better, simpler solution that makes it even easier to get more collagen in your diet: You
+                    can use
+                    a collagen powder. <strong>Unfortunately, not all collagen powders are created equal.</strong></p>
+            
+                <p>For starters, many collagen protein powders come from a single source, such as chicken or cattle. This is
+                    important
+                    because different sources of collagen (e.g., chicken, beef) feature different types of collagen. While at least
+                    28
+                    different types of collagen have been identified, the three most common are types I, II, and III, which account
+                    for 80 to
+                    90% of the collagen in the body.</p>
+            
+                <p>Now, these various types of collagen are important because they serve different functions in the body. For
+                    example,
+                    collagen types I and III, which come from cattle and fish, are found in our skin, bones, and tendons. Type II
+                    collagen,
+                    which comes from chicken, is almost exclusively present in the cartilage between bones.</p>
+            
+                <p>Even though it can be confusing, try not to get too caught up in the Roman numeral soup. The point here is that
+                    different types (and sources) of collagen may contribute to different benefits in the body, which is why we
+                    think its
+                    optimal to consume multiple collagen types from multiple sources .</p>
+            
+                <p>In addition to that major problem, here are some of the other drawbacks of the ingredients in some other collagen
+                    powders, including some bone broth and gelatin supplements:</p>
+            
+                <ul>
+                    <li><strong>They are not broken down into smaller collagen peptides,</strong> also known as collagen hydrolysate
+                        or hydrolyzed collagen,
+                        which are bioactive collagen building blocks that are more easily and readily absorbed (than whole collagen
+                        protein)</li>
+                    <li><strong>They are missing one of the essential amino acids.</strong> Collagen protein is missing the
+                        essential amino acid tryptophan.</li>
+                    <li><strong>They taste and/or smell</strong> which limits how you can use them and can ruin the taste of
+                        whatever you mix them in.</li>
+                    <li><strong>They dont dissolve well in cold or room temperature liquids,</strong> often leaving a sticky, clumpy
+                        mess at the bottom of your
+                        glass thats unpleasant to drink.</li>
+                </ul>
+            
+                <p>Fortunately, that all changes now, and were excited to introduce you to your collagen powder solution: Its called
+                    <strong>BioTRUST Ageless Multi-Collagen Protein.</strong>
+                </p>
+            
+                <h5 class="fw-bold">Why BioTRUST Ageless Multi-Collagen Protein Powder Is The Right Choice</h5>
+            
+                <p>To provide support for an array of full-body benefits, Ageless Multi-Collagen contains FIVE key collagen types
+                    (I, II,
+                    III, V, and X) from FOUR different food sources:</p>
+            
+                <ul>
+                    <li>Hydrolyzed collagen peptides from grass-fed, pasture-raised cattle (types I and III)</li>
+                    <li>Hydrolyzed collagen peptides from sustainable fish (type I)</li>
+                    <li>A unique and patented eggshell membrane (types I, V, and X)</li>
+                    <li>Type II collagen from chicken</li>
+                </ul>
+            
+                <p>While collagen types I, II, and III are mission critical, type V works hand-in-hand with types I and III to
+                    promote
+                    healthy skin, and type X is a type of collagen that is especially important to promote healthy bones.Footnote†
+                    Altogether, we truly believe this combination of five types of collagen is particularly important to reap all
+                    the
+                    benefits collagen supplements offer.</p>
+            
+                <p>Simply put, we combined these five different types of collagen - instead of just one or two types - to provide
+                    support
+                    for an array of full-body benefits</p>
+            
+                <p>Of course, <strong>Ageless Multi-Collagen Protein contains collagen protein that is naturally hydrolyzed and
+                        features BioActive
+                        Collagen Peptides.</strong> These are absorbed intact and trigger the body to make collagen.Footnote† Not
+                    only that, collagen
+                    peptides stimulate the bodys production of hyaluronic acid, which is a lubricating fluid thats a key component
+                    of
+                    healthy, hydrated skin and healthy, supple joints</p>
+            
+                <p>Recent scientific research has revealed several exciting health benefits of supplementation with collagen
+                    peptides,
+                    which have been shown to support:</p>
+            
+                <ul>
+                    <li>Healthy, firm, young-looking skin</li>
+                    <li>Strong, healthy fingernails</li>
+                    <li>Healthy, mobile joints</li>
+                    <li>Healthy bones</li>
+                    <li>Healthy, strong tendons and ligaments</li>
+                    <li>Healthy Looking Hair</li>
+                    <li>Recovery from physical activity</li>
+                    <li>Healthy body composition when combined with regular exercise</li>
+                    <li>Gut health</li>
+                </ul>
+            
+                <p>As an added bonus, Ageless Multi-Collagen Protein also contains tryptophan, an amino acid that is typically
+                    missing from
+                    collagen protein.</p>
+            
+                <p><strong>Ageless Multi-Collagen Protein comes in a unflavored version that is odorless and tasteless, as well as
+                        delicious
+                        flavors, like vanilla, chocolate, and fruit punch. No matter what flavor, Ageless Multi-Collagen dissolves
+                        quickly and
+                        easily in both hot and cool liquids.</strong> Thats right, Ageless Multi-Collagen Protein was formulated to
+                    be your no-clump
+                    collagen powder solution! You can add it to your coffee, tea, protein shakes, smoothies, baked goods, and more
+                    without
+                    the clumps. You wont even notice the difference, but your skin, hair, muscles, and joints will thank you</p>
+            
+                <p>Whats more, Ageless Multi-Collagen Protein is Keto- and Paleo-friendly, and because we are passionate about
+                    better
+                    health, we promise Ageless Multi-Collagen Powder is non-GMO and:</p>
+            
+                <ul>
+                    <li>Dairy-free</li>
+                    <li>Non-GMO</li>
+                    <li>Gluten-free</li>
+                    <li>Soy-free</li>
+                    <li>Free from artificial sweeteners, flavors, and colors</li>
+                </ul>
+            
+                <p>And like all BioTRUST products, Ageless Multi-Collagen Protein undergoes 3rd party lab testing to verify its
+                    purity,
+                    potency, and safety.</p>
+            
+                <h5 class="fw-bold">Ways to Use BioTRUST Ageless Multi-Collagen Protein</h5>
+            
+                <p>Unlike many gelatin, bone broth, and collagen powders, which can only be added to hot liquids, Ageless
+                    Multi-Collagen
+                    Protein mixes instantly in hot and cool liquids. And unlike some collagen powders, which have a distinct taste
+                    and
+                    smell, Unflavored Ageless Multi-Collagen Protein is completely tasteless and odorless. Its also now available in
+                    delicious new flavors.</p>
+            
+                <p>Simply put, with Ageless Multi-Collagen, there are virtually endless possibilities for adding more collagen
+                    protein to
+                    your diet and supporting healthy levels of collagen. You can add it to…</p>
+            
+                <ul>
+                    <li>Coffee</li>
+                    <li>Espresso drinks</li>
+                    <li>Tea</li>
+                    <li>Water</li>
+                    <li>Protein shakes</li>
+                    <li>Smoothies</li>
+                    <li>Mocktails</li>
+                    <li>Juice</li>
+                    <li>Soups</li>
+                    <li>Overnight oats</li>
+                    <li>Yogurt</li>
+                    <li>Baked goods</li>
+                    <li>Salad dressings</li>
+                    <li>Gummies</li>
+                    <li>Popsicles</li>
+                    <li>And more!</li>
+                </ul>
+            
+                <p>… All without a nasty smell or taste, and without the clumps!</p>
+            
+            </div>
+            
+            <!-- large text section number #2 -->
+            <div id="text2" class="tab-pane  mt-4 mb-4 ms-2">
+            
+                <h5 class="fw-bold">AGELESS MULTI-COLLAGEN NUTRITION & INGREDIENTS</h5>
+            
+                <p>Ageless Multi-Collagen provides 10 grams of collagen protein per serving, and it is designed to help support
+                    healthy
+                    levels of collagen in the body.Footnote† Ageless Multi-Collagen features BioActive Collagen Peptides to help
+                    support
+                    healthy skin, hair, and nails; gut, joint, and bone health; and athletic performance, recovery, and an active
+                    lifestyle.Footnote† Ageless Multi-Collagen features five collagen types (I, II, III, V, and X) from four food
+                    sources,
+                    including pasture-raised, hormone- and antibiotic-free grass-fed beef, fish, chicken, and eggshell membrane. It
+                    comes in
+                    a tasteless and odorless unflavored version, as well as delicious flavors like vanilla, chocolate, and fruit
+                    punch. All
+                    flavors of Ageless Multi-Collagen are formulated to mix instantly in hot or cool liquids.</p>
+            
+            </div>
+            
+            <!-- large text section number #3 -->
+            <div id="text3" class="tab-pane  mt-4 mb-4 ms-2">
+            
+                <h6 class="fw-bold">Q: What specifically makes Ageless Multi-Collagen the right choice for a collagen supplement?</h6>
+            
+                <p>Simply put, Ageless Multi-Collagen features FIVE key types of collagen (I, II, III, V, and X) to provide support
+                    for an
+                    array of full-body benefits. The collagen protein in Ageless Multi-Collagen comes from FOUR different sources,
+                    including
+                    pasture-raised beef, fish, egg, and chicken. Each serving of Ageless Multi-Collagen delivers 10 grams of
+                    bioactive
+                    collagen protein, providing your body the building blocks it needs to support healthy joints, bones, skin, hair,
+                    and
+                    nails, gut health, and more.Footnote† It also contains the amino acid tryptophan, and it features naturally
+                    hydrolyzed
+                    collagen peptides.</p>
+            
+                <h6 class="fw-bold">Q: What is the best way to use Ageless Multi-Collagen?</h6>
+            
+                <p>Simply add 1 scoop to at least 8 ounces of any hot or cool liquid and mix thoroughly. You can add Ageless
+                    Multi-Collagen
+                    to protein shakes, smoothies, coffee, tea, soups, and recipes.</p>
+            
+                <h6 class="fw-bold">Q: How long will a bag of Ageless Multi-Collagen last?</h6>
+            
+                <p>Each bag contains 20 to 40 servings depending on how you use it. Each full serving provides 10 grams of collagen
+                    protein; some of our customers add a half-serving (5 grams of collagen) to coffee and protein drinks for a
+                    collagen
+                    boost.</p>
+            
+                <h6 class="fw-bold">Q: Does this product contain caffeine or any other stimulants?</h6>
+            
+                <p>No. This product is caffeine- and stimulant-free.</p>
+            
+                <h6 class="fw-bold">Q: Are there any allergy concerns with this product?</h6>
+            
+                <p>This product contains ingredients from eggs and fish, and it is manufactured in a facility that also processes
+                    tree
+                    nuts, peanuts, wheat, and soy. Always review the label for the most accurate information.</p>
+            
+                <h6 class="fw-bold">Q: If I have a medical condition, can I take this product?</h6>
+            
+                <p>Ageless Multi-Collagen is intended for use by healthy adults over 18 years old. Do not take this product if you
+                    are
+                    pregnant or nursing. Consult your physician before use if you are taking any prescription or over-the-counter
+                    medications or are being treated for any medical condition. Discontinue use and consult your physician if you
+                    experience
+                    any adverse reaction to this product.</p>
+            
+                <h6 class="fw-bold">Q: What if this product doesnt work for me?</h6>
+            
+                <p>While Ageless Multi-Collagen was created to work, if for any reason at all you are unsatisfied with your
+                    purchase, just
+                    send it back to us, and we will issue a prompt and courteous refund even on empty bags. Youre always protected
+                    by our
+                    naturally honest 60-Day Money Back Guarantee.</p>
+            
+            </div>
+            
+            <!-- large text section number #4 -->
+            <div id="text4" class="text-center tab-pane  m-5">
+            
+                <h1 class="text-center d-inline fw-bold">4.8</h1>
+            
+                <div class="text-center color-secondary d-inline">
+                    <i class="fa-solid fa-star color-secondary"></i>
+                    <i class="fa-solid fa-star color-secondary"></i>
+                    <i class="fa-solid fa-star color-secondary"></i>
+                    <i class="fa-solid fa-star color-secondary"></i>
+                    <i class="fa-solid fa-star color-secondary"></i>
+                    <span class="color-primary"> 2874 reviews, 8 Q&As</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

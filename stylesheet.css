@@ -1,0 +1,107 @@
+* {
+    font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif);
+}
+
+.color-primary {
+    color: #0d4f9a;
+}
+.bg-color-primary {
+    background-color: #0d4f9a;
+}
+
+.color-primary-alt {
+    color: #003066
+}
+.bg-color-primary-alt {
+    background-color: #003066
+}
+
+.color-secondary {
+    color: #2bb34d;
+}
+.bg-color-secondary {
+    background-color: #2bb34d;
+}
+
+.color-tertiary {
+    color: #db421e;
+}
+.bg-color-tertiary {
+    background-color: #db421e
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 6px;
+    color: #0d4f9a;
+    background-color: #0d4f9a;
+}
+
+.product-image {
+    width: 50%;
+    height: 70%;
+}
+.graph {
+    width: 30%;
+    height: 20%;
+}
+.container-img {
+    position: relative;
+    top: -35px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.logo {
+    padding: 0% !important;
+    margin: 0% !important;
+}
+
+.mid-card {
+    padding-top: 0% !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+
+.no-gutter {
+    --bs-gutter-x: 0rem !important;
+    --bs-gutter-y: 0rem !important;
+}
+
+.side-tab {
+    direction: ltr;
+    text-align: left;
+    position: fixed;
+    left: -40px;
+    top: 50%;
+    transform: rotate(270deg);
+    z-index: 100;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 25%;
+    height: 80%;
+    margin:auto;
+}
+.carousel-item>img {
+    width: 100%;
+    height: 100%;
+}
+
+.alt-cards {
+    border: 3px solid #0d4f9a;
+}
+.alt-cards-mid {
+    border: 7px solid #0d4f9a;
+}
+
+.search {
+    top: 30%;
+    right: 5%;
+}
+
+.pd-r-0 {
+    padding-right: 0% !important;
+}
