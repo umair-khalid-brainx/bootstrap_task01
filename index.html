@@ -29,50 +29,48 @@
 
     <!-- side fixed tab for reviews -->
     <div class="side-tab d-none d-sm-block">
-        <button class="text-white text-uppercase bg-color-primary p-3">
-            <i class="fa-solid fa-star"></i>
-            Reviews
-        </button>
+        <button class="text-white text-uppercase bg-color-primary p-3"><i class="fa-solid fa-star fa-2xs"></i> Reviews</button>
     </div>
 
     <!-- header elements and styling -->
-    <header class="row bg-color-primary p-2">
+    <header class="row bg-color-primary p-1">
 
         <!-- left side icon, message & styling -->
         <div class="col-md-6 d-none d-lg-block text-white float-start">
             <!-- people icon and message -->
-            <i class="fa-solid fa-person"></i>
-            <h5 class="text-white text-uppercase fw-bold d-inline-block">Every order feeds a child</h5>
+            <i class="fa-solid fa-person fa-2x"></i>
+            <h5 class="text-white text-uppercase d-inline-block">Every order feeds a child</h5>
         </div>
         
         <!-- right side menu & styling -->
         <div class="col-md-6 text-white">
-            <div class="float-lg-end float-none">
+            <div class="account float-lg-end float-none">
                 <!-- account icon -->
-                <i class="fa-solid fa-person d-inline-block">
-                    <div class="dropdown d-inline-block">
-                        <!-- dropdown menu buttons -->
-                        <button type="button" class="btn dropdown-toggle fw-bold text-white text-uppercase" data-bs-toggle="dropdown"> My Account</button>
-                        <!-- dropdown menu items -->
-                        <ul class="dropdown-menu color-primary">
-                            <li><a class="dropdown-item" href="#">Purchase History</a></li>
-                            <li><a class="dropdown-item" href="#">Manage Subscriptions</a></li>
-                            <li><a class="dropdown-item" href="#">Track My Order</a></li>
-                            <li><a class="dropdown-item" href="#">Forget Password</a></li>
-                            <li><a class="dropdown-item" href="#">Create Account</a></li>
-                            <li><a class="dropdown-item" href="#">Customer Support</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </div>
-                </i>
+                <i class="fa-solid fa-person fa-lg d-inline-block"></i>
+                <div class="dropdown d-inline-block">
+                    <!-- dropdown menu buttons -->
+                    <button type="button" class="btn dropdown-toggle text-white text-uppercase" data-bs-toggle="dropdown"> My
+                        Account</button>
+                    <!-- dropdown menu items -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item acc" href="#">Purchase History</a></li>
+                        <li><a class="dropdown-item acc" href="#">Manage Subscriptions</a></li>
+                        <li><a class="dropdown-item acc" href="#">Track My Order</a></li>
+                        <li><a class="dropdown-item acc" href="#">Forget Password</a></li>
+                        <li><a class="dropdown-item acc" href="#">Create Account</a></li>
+                        <li><a class="dropdown-item acc" href="#">Customer Support</a></li>
+                        <li><a class="dropdown-item acc" href="#">Logout</a></li>
+                    </ul>
+                </div>
                 <!-- cart icon and text -->
-                <i class="fa-solid fa-cart-shopping"> MY CART (0)</i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="pe-4 text-white text-uppercase d-inline-block" >MY CART (0)</span>
             </div>
         </div>
     </header>
 
     <!-- navbar elements and styling -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
         <!-- navbar logo -->
         <img src="assets/logo.avif" class="logo img-thumbnail mx-5 my-0 float-start no-gutter" alt="Logo">
 
@@ -87,40 +85,42 @@
             <ul class="navbar-nav mr-auto">
 
                 <!-- dropdown -->
-                <li class="my-1 mx-3 nav-item active bg-color-primary p-1 rounded-3">
+                <li class="my-1 mx-2 nav-item active bg-color-primary p-1 rounded-3">
                     <div class="dropdown">
 
                         <!-- dropdown menu button -->
-                        <button type="button" class="btn dropdown-toggle text-white pt-2 pb-2 ps-3 pe-3"
+                        <button type="button" class="btn fw-bold dropdown-toggle text-white pt-2 pb-2 ps-3 pe-3"
                             data-bs-toggle="dropdown">Shop</button>
 
                         <!-- dropdown menu items -->
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Purchase History</a></li>
-                            <li><a class="dropdown-item" href="#">Manage Subscriptions</a></li>
-                            <li><a class="dropdown-item" href="#">Track My Order</a></li>
-                            <li><a class="dropdown-item" href="#">Forget Password</a></li>
-                            <li><a class="dropdown-item" href="#">Create Account</a></li>
-                            <li><a class="dropdown-item" href="#">Customer Support</a></li>
-                            <li><a class="dropdown-item" href="#">LogOut</a></li>
+                        <ul class="dropdown-menu text-uppercase">
+                            <li><a class="dropdown-item shop" href="#">All Products</a></li>
+                            <li><a class="dropdown-item shop" href="#">Protein</a></li>
+                            <li><a class="dropdown-item shop" href="#">Collagen Protein</a></li>
+                            <li><a class="dropdown-item shop" href="#">Immune Support</a></li>
+                            <li><a class="dropdown-item shop" href="#">Health Living</a></li>
+                            <li><a class="dropdown-item shop" href="#">Digestive Health</a></li>
+                            <li><a class="dropdown-item shop" href="#">Anti Aging</a></li>
+                            <li><a class="dropdown-item shop" href="#">Gear</a></li>
                         </ul>
                     </div>
                 </li>
     
                 <!-- left side other nav items -->
-                <li class="my-1 mx-3 nav-item fw-bold">
-                    <a class="nav-link" href="#">Quality</a>
+                <li class="my-1 mx-2 nav-item fw-bold">
+                    <a class="nav-link color-primary text-uppercase" href="#">Quality</a>
                 </li>
-                <li class="my-1 mx-3 nav-item fw-bold">
-                    <a class="nav-link" href="#">Mission</a>
+                <li class="my-1 mx-2 nav-item fw-bold">
+                    <a class="nav-link color-primary text-uppercase" href="#">Mission</a>
                 </li>
-                <li class="my-1 mx-3 nav-item fw-bold">
-                    <a class="nav-link" href="#">#BioTrust</a>
+                <li class="my-1 mx-2 nav-item fw-bold">
+                    <a class="nav-link color-primary text-uppercase" href="#">#BioTrust</a>
                 </li>
             </ul>
 
         <!-- customer support button and search bar -->
         </div class="float-end">
+
             <form class="d-none d-lg-block my-2 my-lg-0 text-end me-5">
 
                 <!-- customer support button -->
@@ -128,8 +128,8 @@
             
                 <!-- search bar -->
                 <div class="d-flex position-relative">
-                    <input class="input-lg form-control form-control-lg mr-sm-2" type="search" placeholder="Search for products" aria-label="Search">
-                    <i class="search position-absolute d-inline fa-solid fa-magnifying-glass"></i>
+                    <input class="form-control mr-sm-2 search-products fw-bold" type="search" placeholder="Search for products..." aria-label="Search">
+                    <i class="search position-absolute d-inline fa-solid fa-lg fa-magnifying-glass"></i>
                 </div>
             </form>
         </div>
@@ -139,13 +139,10 @@
     <hr>
 
     <!-- breadcrumb pages -->
-    <div class="m-4">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">HOME</a></li>
-                <li class="breadcrumb-item active"><a href="#">COLLAGEN PROTEIN</a></li>
-            </ol>
-        </nav>
+    <div class="mt-3 mb-0 mx-2">
+        <a href="#" class="text-uppercase color-primary page">Home</a>
+        <span>  >  </span>
+        <a href="#" class="text-uppercase color-primary page">Collagen Protein</a>
     </div>
     
 
@@ -165,7 +162,7 @@
                 <i class="fa-solid fa-star color-secondary"></i>
                 <i class="fa-solid fa-star color-secondary"></i>
                 <i class="fa-solid fa-star color-secondary"></i>
-                <span class="color-primary"> 2874 reviews</span>
+                <a href="#" class="page">2874 reviews</a>
             </div>
             
             <!-- product image -->
@@ -175,7 +172,7 @@
 
             <!-- product banner -->
             <div class="d-flex align-items-center justify-content-center">
-                <img src="assets/product-banner.avif" class="i product-banner mt-2 w-100" alt="Product Image">
+                <img src="assets/product-banner.avif" class="i product-banner mt-2 " alt="Product Image">
             </div>
            
         </div>
@@ -184,8 +181,8 @@
         <div class="col-md-6">
 
             <!-- main title right side -->
-            <h4 class="text-uppercase color-primary text-center mb-2 fw-bold">Choose your package</h4>
-            <p class="text-center mb-2 fw-bold">Select your money saving option below:</p>
+            <h4 class="color-primary text-center mb-2 fw-bold">Choose your package</h4>
+            <p class="text-center mb-2">Select your money saving option below:</p>
 
             <!-- dual buttons for purchase -->
             <div class="row p-2">
@@ -197,9 +194,9 @@
                 </div>
 
                 <div class="col-6">
-                    <div class="bg-color-primary text-center rounded-2">
-                        <button type="button" class="btn position-relative w-100 text-white fw-bold py-3 px-1">Subscribe And Save 36%</button>
-                        <span class="position-absolute badge end-0 rounded-pill bg-success" data-bs-toggle="tooltip">?</span>
+                    <div class="text-center rounded-2">
+                        <button type="button" class="btn btn-outline-primary btn-style w-100 color-primary fw-bold py-3 px-1">Subscribe And Save 36%</button>
+                        <div class="position-absolute badge end-0 rounded-pill bg-success">?</div>
                     </div>
                 </div>
             </div>
@@ -208,7 +205,7 @@
             <div class="d-lg-none d-md-block m-4">
 
                 <!-- card#1 with image, text and button -->
-                <div class="row alt-cards p-2 mt-2 border-primary">
+                <div class="row alt-cards p-2 mt-2 custom-border">
                     <div class="col-2">
                         <img src="assets/pack1.jpg" alt="pack">
                     </div>
@@ -224,7 +221,7 @@
                 </div>
                 
                 <!-- card#2 with image, text and button -->
-                <div class="row alt-cards alt-cards-mid p-2 mt-2 border-primary">
+                <div class="row alt-cards alt-cards-mid p-2 mt-2 custom-border">
                     <div class="col-2">
                         <img src="assets/pack2.jpg" alt="pack">
                     </div>
@@ -242,7 +239,7 @@
                 </div>
                 
                 <!-- card#3 with image, text and button -->
-                <div class="row alt-cards alt-cards p-2 mt-2 border-primary">
+                <div class="row alt-cards alt-cards p-2 mt-2 custom-border">
                     <div class="col-2">
                         <img src="assets/pack3.jpg" alt="pack">
                     </div>
@@ -265,12 +262,12 @@
                 <div class="row justify-content-center">
                 
                     <!-- card#1 with text and button -->
-                    <div class="col-lg-4 no-gutter card-layout">
-                        <div class="card" style="border: 2px solid #0d4f9a; z-index: 1; border-radius: 5% 0% 0% 5%;">
+                    <div class="col-lg-4 no-gutter card-layout mt-3">
+                        <div class="card rounded-0" style="border: 2px solid #0d4f9a; z-index: 1;">
                             <div class="card-body">
-                                <h1 class="card-title fw-bold text-center color-primary">1 Bag</h1>
+                                <h1 class="card-title fw-bold text-center color-primary mb-4">1 Bag</h1>
                                 <h2 class="card-title fw-bold text-center mb-5">$ 49</h2>
-                                <div class=" bg-color-secondary text-center rounded-2">
+                                <div class=" bg-color-secondary text-center rounded-2 mt-5 mx-4">
                                     <button type="button" class="btn text-white text-uppercase fw-bold">Choose Flavor</button>
                                 </div>
                             </div>
@@ -279,16 +276,14 @@
                 
                     <!-- card#2 with text and button -->
                     <div class="col-lg-4 no-gutter card-layout">
-                        <div class="card" style="border: 6px solid #0d4f9a; z-index: 2; border-radius: 0% 0% 5% 5%">
+                        <div class="card rounded-0" style="border: 3px solid #0d4f9a; z-index: 2;">
                             <div class="card-body mid-card">
-                                <div class="text-white fw-bold text-uppercase text-center bg-color-primary">
-                                    Most Popular
-                                </div>
-                                <h1 class="card-title text-center fw-bold color-primary">3 Bags</h1>
-                                <h2 class="card-title text-center fw-bold color-secondary">$ 35</h2>
-                                <h2 class="card-title text-center fw-bold color-secondary">Per Bag</h2>
-                                <h3 class="card-title text-center fw-bold mb-1 color-tertiary">Save 28%</h3>
-                                <div class=" bg-color-secondary text-center rounded-2 m-2">
+                                <h5 class="text-white fw-bold text-center bg-color-primary py-1">Most Popular</h5>
+                                <h1 class="card-title text-center fw-bold color-primary my-2">3 Bags</h1>
+                                <h2 class="card-title text-center fw-bold color-secondary my-2">$ 35</h2>
+                                <h2 class="card-title text-center fw-bold color-secondary my-2">Per Bag</h2>
+                                <h3 class="card-title text-center fw-bold mb-1 color-tertiary my-2">Save 28%</h3>
+                                <div class=" bg-color-secondary text-center rounded-2 mx-4">
                                     <button type="button" class="btn text-white text-uppercase fw-bold">Choose Flavor</button>
                                 </div>
                             </div>
@@ -296,14 +291,14 @@
                     </div>
                 
                     <!-- card#3 with text and button -->
-                    <div class="col-lg-4 no-gutter card-layout">
-                        <div class="card" style="border: 2px solid #0d4f9a; z-index: 1; border-radius: 0% 5% 5% 0%">
+                    <div class="col-lg-4 no-gutter card-layout mt-3">
+                        <div class="card rounded-0" style="border: 2px solid #0d4f9a; z-index: 1;">
                             <div class="card-body">
-                                <h1 class="card-title text-center fw-bold color-primary">6 Bags</h1>
-                                <h2 class="card-title text-center fw-bold color-secondary">$ 31</h2>
-                                <h2 class="card-title text-center fw-bold color-secondary">Per Bag</h2>
-                                <h3 class="card-title text-center fw-bold mb-1 color-tertiary">Save 36%</h3>
-                                <div class=" bg-color-secondary text-center rounded-2">
+                                <h1 class="card-title text-center fw-bold color-primary my-1">6 Bags</h1>
+                                <h2 class="card-title text-center fw-bold color-secondary my-1">$ 31</h2>
+                                <h2 class="card-title text-center fw-bold color-secondary my-1">Per Bag</h2>
+                                <h3 class="card-title text-center fw-bold mb-1 color-tertiary my-1">Save 36%</h3>
+                                <div class=" bg-color-secondary text-center rounded-2 mx-4">
                                     <button type="button" class="btn text-white text-uppercase fw-bold">Choose Flavor</button>
                                 </div>
                             </div>
@@ -323,9 +318,6 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <img class="d-block" src="assets/slide-img01.jpeg" alt="Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="assets/slide-img02.jpg" alt="Slide">
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block" src="assets/slide-img03.jpg" alt="Slide">
@@ -373,8 +365,8 @@
     <div class="m-5">
 
         <!-- title -->
-        <h4 class="fw-bold">The No-Clump Collagen Protein Powder</h4>
-        <h6 class="fw-bold">Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:</h6>
+        <h5 class="fw-bold">The No-Clump Collagen Protein Powder</h5>
+        <p class="fw-bold">Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:</p>
 
         <!-- list of details -->
         <ul>
@@ -384,7 +376,7 @@
         </ul>
 
         <!-- title -->
-        <h6 class="fw-bold">Plus, Every Serving of Ageless Multi-Collagen is:</h6>
+        <p class="fw-bold">Plus, Every Serving of Ageless Multi-Collagen is:</p>
 
         <!-- list of details -->
         <ul>
@@ -397,7 +389,7 @@
     </div>
 
     <!-- four column container layout of product details -->
-    <div class="row no-gutter text-white text-uppercase text-center bg-color-primary fw-bold pb-5">
+    <div class="row no-gutter text-white text-uppercase text-center bg-color-primary pb-5">
 
         <!-- container#1 elements and styling -->
         <div class="col-md-6 col-sm-12 col-lg-3 no-gutter">
@@ -437,14 +429,14 @@
     <div class="row bg-color-primary">
 
         <!-- main text -->
-        <div class="col-md-5 border-end border-5 border-success pe-5 pb-5">
-            <h1 class="display-4 text-uppercase text-white text-lg-end text-center">Featured</h1>
-            <h1 class="display-4 text-uppercase text-white text-lg-end text-center">Customer Review</h1>
-            <h4 class="color-secondary text-lg-end text-center">Read More Reviews</h4>
+        <div class="col-md-4 review-border pe-5 pb-5 mb-5">
+            <h1 class="review text-uppercase text-white text-lg-end text-center fw-bold">Featured</h1>
+            <h1 class="review text-uppercase text-white text-lg-end text-center fw-bold">Customer Review</h1>
+            <h5 class="color-secondary text-lg-end text-center">Read More Reviews</h5>
         </div>
 
         <!-- review icons -->
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="text-center color-secondary">
                 <i class="fa-solid fa-star fa-3x color-secondary"></i>
                 <i class="fa-solid fa-star fa-3x color-secondary"></i>
@@ -454,7 +446,7 @@
             </div>
 
             <!-- review text -->
-            <h5 class="text-white text-center mt-3">"<strong>I love it! No taste or smell. I put it in my coffee first thing. Cuts my hunger and gives me energy."</strong></h5>
+            <h4 class="text-white text-center mt-3">"<strong>I love it! No taste or smell. I put it in my coffee first thing. Cuts my hunger and gives me energy."</strong></h4>
             <h5 class="text-white text-center mt-2 fst-italic"><strong>Jacqueline T.</strong></h5>
             <h4 class="color-secondary text-center mt-2 text-uppercase"><strong>Verified Buyer</strong></h4>
         </div>
@@ -464,23 +456,23 @@
     <hr>
 
     <!-- footer nav item tabs for product details text -->
-    <div class="container m-5">
+    <div class="tab-container ms-5 mt-5">
 
-        <ul class="nav nav-tabs flex-column flex-md-row">
+        <ul class="nav sticky-top nav-tabs flex-column flex-md-row sticky-top bg-white">
 
-            <li class="active nav-item fw-bold text-lg-start text-center">
-                <a class="active nav-link color-primary" data-bs-toggle="tab" href="#text1">Health Benefits</a>
+            <li class="nav-item fw-bold text-lg-start text-center text-uppercase">
+                <a class="nav-link  active color-primary" data-bs-toggle="tab" href="#text1">Health Benefits</a>
             </li>
 
-            <li class="nav-item fw-bold text-lg-start text-center">
+            <li class="nav-item fw-bold text-lg-start text-center text-uppercase">
                 <a class="nav-link color-primary" data-bs-toggle="tab" href="#text2">Nutrition & Ingredients</a>
             </li>
 
-            <li class="nav-item fw-bold text-lg-start text-center">
+            <li class="nav-item fw-bold text-lg-start text-center text-uppercase">
                 <a class="nav-link color-primary" data-bs-toggle="tab" href="#text3">FAQs</a>
             </li>
            
-            <li class="nav-item fw-bold text-lg-start text-center">
+            <li class="nav-item fw-bold text-lg-start text-center text-uppercase">
                 <a class="nav-link color-primary" data-bs-toggle="tab" href="#text4">Reviews</a>
             </li>
 
@@ -548,8 +540,8 @@
                     of 20, and by the time folks hit their 80s, collagen levels may be, on average, only one-third of what they were
                     in
                     their 20s.</p>
-            
-                <img src="graph.jpg" alt="Graph" class="">
+            :not(i)
+                <img src="assets/graph.jpg" alt="Graph" class="graph">
             
                 <p>Over time, this reduction in collagen may contribute to…</p>
             
